@@ -9,14 +9,14 @@
   size="lg"
   padding="md"
 >
-  <div class=" parent grid grid-cols-5 grid-rows-5 gap-4 text-white">
+  <div class=" parent grid grid-cols-5 gap-4 text-white">
     <div
       class=" div1 col-span-5 bg-shakespeare-900 rounded-xl text-2xl font-bold dark:text-white"
     >
       <span class="">Clément Massit</span>
     </div>
     <div
-      class="div2 align-middle col-span-3 row-span-3 row-start-2 bg-shakespeare-900 rounded-xl py-6 px-1"
+      class="div2 align-middle col-span-3 row-span-2 row-start-2 bg-shakespeare-900 rounded-xl py-6 px-1"
     >
       <span class="mb-5 text-base sm:text-lg dark:text-gray-400">
         <h2 class="uppercase font-bold text-2xl my-6">
@@ -26,20 +26,26 @@
         a degree in computer science & data science
       </span>
     </div>
-    <div class="col-span-2 row-span-4 col-start-4 row-start-2">
+    <div class="col-span-2 row-span-3 col-start-4 row-start-2">
       <Img
-        src="../../public/Clément_Massit.jpg"
+        src="src/public/Clément_Massit.jpg"
         alt="Clément Massit"
         imgClass="rounded-xl"
       />
     </div>
-    <div
-      class="div4 col-span-3 row-span-1 row-start-5 bg-shakespeare-900 rounded-xl"
-    >
-      <span class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
+    <div class="div4 col-span-3 row-start-4 bg-shakespeare-900 rounded-xl">
+      <a
+        href="https://github.com/clement-massit"
+        class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
+      >
         <SocialIcons network="github" fgColor="#eeeeee" bgColor="#116b93" />
+      </a>
+      <a
+        href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
+        class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
+      >
         <SocialIcons network="linkedin" fgColor="#eeeeee" bgColor="#116b93" />
-      </span>
+      </a>
     </div>
   </div>
 </Card>
