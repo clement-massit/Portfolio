@@ -21,6 +21,13 @@
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@rodneylab/svelte-social-icons": "^0.0.28",
+    "express": "^4.18.2",
+    "flowbite-svelte-icons": "^0.4.4",
+    "fusioncharts": "^3.21.1",
+    "netlify-lambda": "^2.0.16",
+    "serverless-http": "^3.2.0",
+    "svelte-fusioncharts": "^1.0.0",
     "svelte-themes": "^1.0.10"
   }
 }

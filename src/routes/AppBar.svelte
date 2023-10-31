@@ -23,7 +23,7 @@
     <NavUl>
       <NavLi href="/"
         ><Link to="/" class=" text-shakespeare-700 hover:text-shakespeare-200"
-          >Home</Link
+          >Clément</Link
         ></NavLi
       >
       <NavLi href="/Dashboard"
