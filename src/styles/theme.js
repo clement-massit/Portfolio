@@ -1,6 +1,5 @@
 //theme.js
 const tailwindColors = require("tailwindcss/colors");
-
 const darkShade = 600;
 const lightShade = 300;
 const defaultShade = 500;

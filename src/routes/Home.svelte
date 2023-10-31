@@ -2,7 +2,6 @@
   import { Card, Button, Toggle } from "flowbite-svelte";
   import { Img } from "flowbite-svelte";
   import SocialIcons from "@rodneylab/svelte-social-icons";
-  import { colors } from "../styles/theme";
 </script>
 
 <Card
@@ -27,7 +26,7 @@
         a degree in computer science & data science
       </span>
     </div>
-    <div class="div3 col-span-2 row-span-4 col-start-4 row-start-2">
+    <div class="col-span-2 row-span-4 col-start-4 row-start-2">
       <Img
         src="../../public/Clément_Massit.jpg"
         alt="Clément Massit"
@@ -38,8 +37,8 @@
       class="div4 col-span-3 row-span-1 row-start-5 bg-shakespeare-900 rounded-xl"
     >
       <span class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-        <!-- <SocialIcons network="github" fgColor="#eeeeee" />
-        <SocialIcons network="linkedin" fgColor="#eeeeee" bgColor="#125b7a" /> -->
+        <SocialIcons network="github" fgColor="#eeeeee" bgColor="#116b93" />
+        <SocialIcons network="linkedin" fgColor="#eeeeee" bgColor="#116b93" />
       </span>
     </div>
   </div>
