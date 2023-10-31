@@ -2,6 +2,7 @@
   import { Card, Button, Toggle } from "flowbite-svelte";
   import { Img } from "flowbite-svelte";
   import SocialIcons from "@rodneylab/svelte-social-icons";
+  import img_clem from "../static/Clément_Massit.jpg";
 </script>
 
 <Card
@@ -27,11 +28,7 @@
       </span>
     </div>
     <div class="col-span-2 row-span-3 col-start-4 row-start-2">
-      <Img
-        src="src/lib/Clément_Massit.jpg"
-        alt="Clément Massit"
-        imgClass="rounded-xl"
-      />
+      <Img src={img_clem} alt="Clément Massit" imgClass="rounded-xl" />
     </div>
     <div class="div4 col-span-3 row-start-4 bg-shakespeare-900 rounded-xl">
       <a
