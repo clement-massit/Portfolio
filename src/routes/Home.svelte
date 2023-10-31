@@ -28,7 +28,7 @@
     </div>
     <div class="col-span-2 row-span-3 col-start-4 row-start-2">
       <Img
-        src="src/public/Clément_Massit.jpg"
+        src="src/lib/Clément_Massit.jpg"
         alt="Clément Massit"
         imgClass="rounded-xl"
       />
