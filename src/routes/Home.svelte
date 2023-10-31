@@ -1,103 +1,113 @@
 <script>
-  import { Card, Button, Toggle } from "flowbite-svelte";
-  import { Img } from "flowbite-svelte";
-  import SocialIcons from "@rodneylab/svelte-social-icons";
-  import img_clem from "../static/Clément_Massit.jpg";
+  import CardHomeClem from "../components/CardHomeClem.svelte";
 </script>
 
-<Card
-  class="text-center align-middle bg-shakespeare-950 border-none"
-  size="lg"
-  padding="md"
->
-  <div class=" parent grid grid-cols-5 gap-4 text-white">
-    <div
-      class=" div1 col-span-5 bg-shakespeare-900 rounded-xl text-2xl font-bold dark:text-white"
-    >
-      <span class="">Clément Massit</span>
-    </div>
-    <div
-      class="div2 align-middle col-span-3 row-span-2 row-start-2 bg-shakespeare-900 rounded-xl py-6 px-1"
-    >
-      <span class="mb-5 text-base sm:text-lg dark:text-gray-400">
-        <h2 class="uppercase font-bold text-2xl my-6">
-          I'm Clément Massit - Data Scientist
-        </h2>
-        Young engineer graduated from POLYTECH ANNECY Engineering school. I have
-        a degree in computer science & data science
-      </span>
-    </div>
-    <div class="col-span-2 row-span-3 col-start-4 row-start-2">
-      <Img src={img_clem} alt="Clément Massit" imgClass="rounded-xl" />
-    </div>
-    <div class="div4 col-span-3 row-start-4 bg-shakespeare-900 rounded-xl">
-      <a
-        href="https://github.com/clement-massit"
-        class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
-      >
-        <SocialIcons network="github" fgColor="#eeeeee" bgColor="#116b93" />
-      </a>
-      <a
-        href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
-        class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
-      >
-        <SocialIcons network="linkedin" fgColor="#eeeeee" bgColor="#116b93" />
-      </a>
-    </div>
-  </div>
-</Card>
-<br />
-
-<!-- <div class="parent bg-shakespeare-950 rounded-xl p-2">
-  <div class="div1 bg-shakespeare-900 rounded-xl">1</div>
-  <div class="div2 bg-shakespeare-900 rounded-xl">
-    
-  </div>
-
-  <div class="div3 bg-shakespeare-900 rounded-xl">
-    <Img
-      src="../../public/Clément_Massit.jpg"
-      alt="Clément Massit"
-      imgClass="rounded-xl"
-    />
-  </div>
-  <div class="div4 bg-shakespeare-900 rounded-xl">
-    <span class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-      Caca
-    </span>
-  </div>
-</div> -->
+<div class="slider-thumb-1" />
+<div class="slider-thumb-2" />
+<div class="slider-thumb-3" />
+<CardHomeClem />
 
 <style>
-  .parent {
-    display: grid;
-    text-align: center;
-    vertical-align: middle;
-    color: white;
+  .slider-thumb-1::before {
+    opacity: 0.7;
+    position: absolute;
+    content: "";
+    left: 5%;
+    top: 20%;
+    width: 350px;
+    height: 450px;
+    background: linear-gradient(#e3f2fb, #30b3df);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: 0;
+    -webkit-animation: sliderShape 5s linear infinite;
   }
-
-  .div1 {
-    /* grid-area: 1 / 1 / 2 / 3; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @keyframes sliderShape {
+    0%,
+    100% {
+      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
+      transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    67% {
+      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
+      transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
+    }
   }
-  .div2 {
-    /* grid-area: 2 / 1 / 3 / 2; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .slider-thumb-2::before {
+    opacity: 0.7;
+    position: absolute;
+    content: "";
+    left: 73%;
+    top: 17%;
+    width: 380px;
+    height: 350px;
+    background: linear-gradient(#30b3df, #e3f2fb);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: 0;
+    -webkit-animation: sliderShape 5s linear infinite;
   }
-  .div3 {
-    /* grid-area: 2 / 2 / 4 / 3; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  @keyframes sliderShape {
+    0%,
+    100% {
+      border-radius: 38% 47% 65% 48% / 40% 40% 60% 60%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 67% 45% 38% 56% / 25% 34% 75% 75%;
+      transform: translate3d(0, 8px, 0) rotateZ(0.05deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.03deg);
+    }
+    67% {
+      border-radius: 100% 55% 55% 100% / 100% 100% 55% 55%;
+      transform: translate3d(0, -4px, 0) rotateZ(0.04deg);
+    }
   }
-  .div4 {
-    /* grid-area: 3 / 1 / 4 / 2; */
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  .slider-thumb-3::before {
+    opacity: 0.7;
+    position: absolute;
+    content: "";
+    left: 55%;
+    top: 75%;
+    width: 150px;
+    height: 145px;
+    background: linear-gradient(#e3f2fb, #30b3df);
+    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
+    will-change: border-radius, transform, opacity;
+    animation: sliderShape 5s linear infinite;
+    display: block;
+    z-index: 0;
+    -webkit-animation: sliderShape 5s linear infinite;
+  }
+  @keyframes sliderShape {
+    0%,
+    100% {
+      border-radius: 38% 47% 65% 48% / 40% 40% 60% 60%;
+      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
+    }
+    34% {
+      border-radius: 67% 45% 38% 56% / 25% 34% 75% 75%;
+      transform: translate3d(0, 8px, 0) rotateZ(0.05deg);
+    }
+    50% {
+      transform: translate3d(0, 0, 0) rotateZ(0.03deg);
+    }
+    67% {
+      border-radius: 100% 55% 55% 100% / 100% 100% 55% 55%;
+      transform: translate3d(0, -4px, 0) rotateZ(0.04deg);
+    }
   }
 </style>

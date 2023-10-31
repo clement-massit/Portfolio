@@ -18,6 +18,7 @@
     "svelte": "^4.0.5",
     "svelte-routing": "^2.5.0",
     "tailwindcss": "^3.3.2",
+    "three": "^0.140.2",
     "vite": "^4.4.5"
   },
   "dependencies": {
@@ -28,6 +29,7 @@
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0",
     "svelte-fusioncharts": "^1.0.0",
-    "svelte-themes": "^1.0.10"
+    "svelte-themes": "^1.0.10",
+    "vanta": "^0.5.24"
   }
 }

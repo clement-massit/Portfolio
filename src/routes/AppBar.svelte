@@ -33,6 +33,12 @@
           >Dashboard</Link
         ></NavLi
       >
+      <NavLi href="/Skills"
+        ><Link
+          to="/Skills"
+          class=" text-shakespeare-700 hover:text-shakespeare-200">Skills</Link
+        ></NavLi
+      >
     </NavUl>
   </Navbar>
 </div>
