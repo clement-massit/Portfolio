@@ -3,13 +3,14 @@
   import img_popo from "../static/Logo_Polytech_Annecy_Chambery.png";
   import img_taltech from "../static/TalTech.png";
   import MediaQuery from "svelte-media-queries";
+
   let matches;
 </script>
 
 <MediaQuery query="(max-width: 480px)" bind:matches>
   {#if matches}
     <Card
-      class="text-center align-middle bg-shakespeare-950 border-none "
+      class="text-center align-middle border-none shadow-none "
       size="sm"
       padding="md"
     >
@@ -35,7 +36,7 @@
 
   {#if !matches}
     <Card
-      class="text-center align-middle bg-shakespeare-950 border-none "
+      class="text-center align-middle bg-transparent border-none shadow-none "
       size="sm"
       padding="md"
     >
@@ -45,12 +46,14 @@
         >
           <span>EDUCATION</span>
         </div>
-        <div class="img bg-white col-span-2 row-span-2 row-start-2">
+        <div class="img bg-white col-span-2 row-span-2 row-start-2 rounded-xl">
           <a href="https://www.polytech.univ-smb.fr/index.html"
             ><Img src={img_popo} alt="Polytech" imgClass="rounded-xl p-3" /></a
           >
         </div>
-        <div class="img bg-white col-span-2 row-span-2 col-start-3 row-start-2">
+        <div
+          class="img bg-white col-span-2 row-span-2 col-start-3 row-start-2 rounded-xl"
+        >
           <a href="https://taltech.ee/en"
             ><Img src={img_taltech} alt="TalTech" imgClass="rounded-xl " /></a
           >

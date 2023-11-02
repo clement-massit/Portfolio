@@ -10,7 +10,7 @@
 </script>
 
 <Navbar
-  class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b bg-shakespeare-50 "
+  class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b bg-shakespeare-50 shadow-xl"
 >
   <NavBrand href="/">
     <span
@@ -31,10 +31,10 @@
         class=" text-shakespeare-700 hover:text-shakespeare-200">Dashboard</Link
       ></NavLi
     >
-    <NavLi href="/Skills"
+    <NavLi href="/About"
       ><Link
-        to="/Skills"
-        class=" text-shakespeare-700 hover:text-shakespeare-200">Skills</Link
+        to="/About"
+        class=" text-shakespeare-700 hover:text-shakespeare-200">About</Link
       ></NavLi
     >
   </NavUl>

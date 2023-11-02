@@ -36,6 +36,7 @@
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0",
     "svelte-fusioncharts": "^1.0.0",
+    "svelte-materialify": "^0.3.11",
     "svelte-media-queries": "^1.6.2",
     "svelte-themes": "^1.0.10",
     "vanta": "^0.5.24"

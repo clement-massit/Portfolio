@@ -4,6 +4,9 @@
   import SocialIcons from "@rodneylab/svelte-social-icons";
   import img_clem from "../static/Clément_Massit.jpg";
   import MediaQuery from "svelte-media-queries";
+  import Carousel from "./Carousel.svelte";
+  import Formations from "./Formations.svelte";
+  import Socials from "./Socials.svelte";
   const data = {
     Name: "Clément Massit",
     titleDescription: " I'm Clément Massit - Data Scientist",
@@ -58,71 +61,80 @@
 
   {#if !matches}
     <Card
-      class="text-center align-middle bg-shakespeare-950 border-none "
-      size="lg"
+      class="container bg-shakespeare-950 border-none mt-28 shadow-xl mb-14"
+      size="xl"
       padding="md"
     >
-      <div class=" parent grid grid-cols-5 gap-4 text-white">
-        <div
-          class=" div1 col-span-5 bg-shakespeare-900 rounded-xl text-2xl font-bold dark:text-white"
-        >
-          <span class="">{data.Name}</span>
-        </div>
-        <div
-          class="div2 align-middle col-span-3 row-span-2 row-start-2 bg-shakespeare-900 rounded-xl py-1 px-1"
-        >
-          <span class="mb-5 text-base sm:text-lg">
-            <h2 class="uppercase font-bold text-2xl my-5 text-white">
+      <div class="grid grid-cols-4 grid-rows-3 gap-4">
+        <div class="div1 bg-shakespeare-900 col-span-3 rounded-xl">
+          <span class="mb-5 text-base sm:text-lg text-white px-16">
+            <h1 class="uppercase font-bold my-5">
               {data.titleDescription}
-            </h2>
-            {data.Description}
+            </h1>
+            <h2>{data.Description}</h2>
           </span>
         </div>
-        <div class="col-span-2 row-span-3 col-start-4 row-start-2">
-          <Img src={img_clem} alt="Clément Massit" imgClass="rounded-xl" />
+        <div
+          class="div1 bg-shakespeare-900 col-span-3 col-start-1 row-start-2 rounded-xl"
+        >
+          <Carousel />
         </div>
-        <div class="div4 col-span-3 row-start-4 bg-shakespeare-900 rounded-xl">
-          <a
-            href="https://github.com/clement-massit"
-            class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
-          >
-            <SocialIcons network="github" fgColor="#eeeeee" bgColor="#116b93" />
-          </a>
-          <a
-            href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
-            class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3 my-1"
-          >
-            <SocialIcons
-              network="linkedin"
-              fgColor="#eeeeee"
-              bgColor="#116b93"
+        <div
+          class="div1 bg-shakespeare-900 col-span-3 col-start-1 row-start-3 flex justify-center rounded-xl"
+        >
+          <div class="grid grid-cols-2 divide-x divide-shakespeare-950">
+            <div class="div2">
+              <Formations />
+            </div>
+            <div class="div2 px-32">
+              <Socials />
+            </div>
+          </div>
+        </div>
+        <div class="row-span-3 col-start-4 row-start-1">
+          <div class="photo">
+            <Img
+              src={img_clem}
+              alt="Clément Massit"
+              imgClass="rounded-xl shrink"
             />
-          </a>
+          </div>
         </div>
       </div>
+
+      <!-- <div
+        class="txt bg-shakespeare-900 rounded-xl text-2xl font-bold dark:text-white"
+      >
+        <span class="mb-5 text-base sm:text-lg">
+          <h2 class="uppercase font-bold text-2xl my-5 text-white">
+            {data.titleDescription}
+          </h2>
+          {data.Description}
+
+          <span /></span
+        >
+      </div>
+      <div class="splide"><Carousel /></div>
+      <div class="links">
+        <a
+          href="https://github.com/clement-massit"
+          class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3"
+        >
+          <SocialIcons network="github" fgColor="#eeeeee" bgColor="#116b93" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
+          class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 mx-3 my-1"
+        >
+          <SocialIcons network="linkedin" fgColor="#eeeeee" bgColor="#116b93" />
+        </a>
+      </div>
+      <div class="photo">
+        <Img src={img_clem} alt="Clément Massit" imgClass="rounded-xl" />
+      </div> -->
     </Card>
   {/if}
 </MediaQuery>
-
-<!-- <div class="parent bg-shakespeare-950 rounded-xl p-2">
-  <div class="div1 bg-shakespeare-900 rounded-xl">1</div>
-  <div class="div2 bg-shakespeare-900 rounded-xl">
-    
-  </div>
-
-  <div class="div3 bg-shakespeare-900 rounded-xl">
-    <Img
-      src="../../public/Clément_Massit.jpg"
-      alt="Clément Massit"
-      imgClass="rounded-xl"
-    />
-  </div>
-  <div class="div4 bg-shakespeare-900 rounded-xl">
-    <span class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4">
-      Caca
-    </span>
-  </div>
-</div> -->
 
 <style>
   .parent {
@@ -150,10 +162,14 @@
     justify-content: center;
     align-items: center;
   }
-  .div4 {
-    /* grid-area: 3 / 1 / 4 / 2; */
+
+  .photo {
+    grid-area: photo;
+    min-width: 100%;
+    min-height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
   }
 </style>
