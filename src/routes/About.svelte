@@ -3,12 +3,21 @@
 </script>
 
 <div class="container">
-  <h1 class="text-left text-shakespeare-900">ABOUT</h1>
+  <h1 class="text-left text-shakespeare-900 font-bold">ABOUT</h1>
   <br />
+  <div class="text">
+    <p>Hi, I'm Clément.</p>
 
-  <p>Hi, I'm Clément.</p>
-
-  <p />
+    <p>
+      I am a junior data scientist passionate about data science and using
+      technology to solve complex problems. My job consists in analyze and
+      manipulates datasets in order to extract knowledge and identify trends. I
+      am skilled for data pre-processing, development of predictive models,
+      building statistical methods, or data visualization.
+    </p>
+    <br />
+    <p>I am currently based near Bordeaux seeking for a job in this field.</p>
+  </div>
 </div>
 
 <style>
@@ -16,8 +25,6 @@
     /* grid-area: 2 / 1 / 3 / 2; */
     height: 100%;
     width: 50%;
-    background-color: powderblue;
-
     justify-content: left;
     align-items: center;
     text-align: left;
@@ -25,5 +32,7 @@
   }
 
   .text {
+    text-align: justify;
+    font-size: large;
   }
 </style>
