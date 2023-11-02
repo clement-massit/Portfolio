@@ -15,20 +15,28 @@
     "flowbite-svelte": "^0.44.18",
     "postcss": "^8.4.24",
     "postcss-load-config": "^4.0.1",
+    "sass": "^1.69.5",
     "svelte": "^4.0.5",
     "svelte-routing": "^2.5.0",
+    "svelte-swipe": "^2.0.3",
+    "swipe-scroller": "^1.0.6",
     "tailwindcss": "^3.3.2",
     "three": "^0.140.2",
     "vite": "^4.4.5"
   },
   "dependencies": {
+    "@egjs/infinitegrid": "^4.10.1",
+    "@egjs/svelte-infinitegrid": "^4.10.2",
+    "@glidejs/glide": "^3.6.0",
     "@rodneylab/svelte-social-icons": "^0.0.28",
+    "@splidejs/svelte-splide": "^0.2.9",
     "express": "^4.18.2",
     "flowbite-svelte-icons": "^0.4.4",
     "fusioncharts": "^3.21.1",
     "netlify-lambda": "^2.0.16",
     "serverless-http": "^3.2.0",
     "svelte-fusioncharts": "^1.0.0",
+    "svelte-media-queries": "^1.6.2",
     "svelte-themes": "^1.0.10",
     "vanta": "^0.5.24"
   }
