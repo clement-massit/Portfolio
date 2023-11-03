@@ -1,108 +1,74 @@
-<div class="slider-thumb-1" />
-<div class="slider-thumb-2" />
-<div class="slider-thumb-3" />
+<script>
+  import Particles from "svelte-particles";
+  //import { loadFull } from "tsparticles"; // if you are going to use `loadFull`, install the "tsparticles" package too.
+  import { loadSlim } from "tsparticles-slim"; // if you are going to use `loadSlim`, install the "tsparticles-slim" package too.
+
+  let particlesUrl = "http://foo.bar/particles.json"; // placeholder, replace it with a real url
+
+  let particlesConfig = {
+    particles: {
+      color: {
+        value: "#1486b5",
+      },
+      links: {
+        enable: true,
+        color: "#1486b5",
+      },
+      move: {
+        enable: true,
+      },
+      number: {
+        value: 100,
+      },
+    },
+  };
+
+  let onParticlesLoaded = (event) => {
+    const particlesContainer = event.detail.particles;
+
+    // you can use particlesContainer to call all the Container class
+    // (from the core library) methods like play, pause, refresh, start, stop
+  };
+
+  let particlesInit = async (engine) => {
+    // you can use main to customize the tsParticles instance adding presets or custom shapes
+    // this loads the tsparticles package bundle, it's the easiest method for getting everything ready
+    // starting from v2 you can add only the features you need reducing the bundle size
+    //await loadFull(engine);
+    await loadSlim(engine);
+  };
+</script>
+
+<Particles
+  id="tsparticles"
+  class="foo bar"
+  style=""
+  options={particlesConfig}
+  on:particlesLoaded={onParticlesLoaded}
+  {particlesInit}
+/>
+
+<!-- or -->
+
+<!-- <Particles
+  id="tsparticles"
+  class="foo bar"
+  style=""
+  url={particlesUrl}
+  on:particlesLoaded={onParticlesLoaded}
+  {particlesInit}
+/> -->
 
 <style>
-  .slider-thumb-1::before {
-    opacity: 0.7;
-    position: absolute;
-    content: "";
-    left: 5%;
-    top: 20%;
-    width: 350px;
-    height: 450px;
-    background: linear-gradient(#e3f2fb, #30b3df);
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    animation: sliderShape 5s linear infinite;
-    display: block;
-    z-index: 0;
-    -webkit-animation: sliderShape 5s linear infinite;
-  }
-  @keyframes sliderShape {
-    0%,
-    100% {
-      border-radius: 42% 58% 70% 30% / 45% 45% 55% 55%;
-      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-    }
-    34% {
-      border-radius: 70% 30% 46% 54% / 30% 29% 71% 70%;
-      transform: translate3d(0, 5px, 0) rotateZ(0.01deg);
-    }
-    50% {
-      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-    }
-    67% {
-      border-radius: 100% 60% 60% 100% / 100% 100% 60% 60%;
-      transform: translate3d(0, -3px, 0) rotateZ(0.01deg);
-    }
-  }
-  .slider-thumb-2::before {
-    opacity: 0.7;
-    position: absolute;
-    content: "";
-    left: 73%;
-    top: 17%;
-    width: 380px;
-    height: 350px;
+  :global(#tsparticles) {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: -2;
     background: linear-gradient(#30b3df, #e3f2fb);
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    animation: sliderShape 5s linear infinite;
-    display: block;
-    z-index: 0;
-    -webkit-animation: sliderShape 5s linear infinite;
-  }
-  @keyframes sliderShape {
-    0%,
-    100% {
-      border-radius: 38% 47% 65% 48% / 40% 40% 60% 60%;
-      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-    }
-    34% {
-      border-radius: 67% 45% 38% 56% / 25% 34% 75% 75%;
-      transform: translate3d(0, 8px, 0) rotateZ(0.05deg);
-    }
-    50% {
-      transform: translate3d(0, 0, 0) rotateZ(0.03deg);
-    }
-    67% {
-      border-radius: 100% 55% 55% 100% / 100% 100% 55% 55%;
-      transform: translate3d(0, -4px, 0) rotateZ(0.04deg);
-    }
-  }
-  .slider-thumb-3::before {
-    opacity: 0.7;
-    position: absolute;
-    content: "";
-    left: 55%;
-    top: 75%;
-    width: 150px;
-    height: 145px;
-    background: linear-gradient(#e3f2fb, #30b3df);
-    border-radius: 62% 47% 82% 35% / 45% 45% 80% 66%;
-    will-change: border-radius, transform, opacity;
-    animation: sliderShape 5s linear infinite;
-    display: block;
-    z-index: 0;
-    -webkit-animation: sliderShape 5s linear infinite;
-  }
-  @keyframes sliderShape {
-    0%,
-    100% {
-      border-radius: 38% 47% 65% 48% / 40% 40% 60% 60%;
-      transform: translate3d(0, 0, 0) rotateZ(0.01deg);
-    }
-    34% {
-      border-radius: 67% 45% 38% 56% / 25% 34% 75% 75%;
-      transform: translate3d(0, 8px, 0) rotateZ(0.05deg);
-    }
-    50% {
-      transform: translate3d(0, 0, 0) rotateZ(0.03deg);
-    }
-    67% {
-      border-radius: 100% 55% 55% 100% / 100% 100% 55% 55%;
-      transform: translate3d(0, -4px, 0) rotateZ(0.04deg);
-    }
   }
 </style>
