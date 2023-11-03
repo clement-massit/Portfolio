@@ -7,6 +7,7 @@
     FooterIcon,
   } from "flowbite-svelte";
   import { GithubSolid, LinkedinSolid } from "flowbite-svelte-icons";
+  import { Link } from "svelte-routing";
 </script>
 
 <Footer class="bg-shakespeare-50">
@@ -24,11 +25,19 @@
     >
     <FooterLink
       aClass="text-shakespeare-700 hover:text-shakespeare-200"
-      href="/Dashboard">Dashboard</FooterLink
+      href="/Dashboard"
+      ><Link
+        to="/Dashboard"
+        class=" text-shakespeare-700 hover:text-shakespeare-200">Dashboard</Link
+      ></FooterLink
     >
     <FooterLink
       aClass="text-shakespeare-700 hover:text-shakespeare-200"
-      href="/About">About</FooterLink
+      href="/About"
+      ><Link
+        to="/About"
+        class=" text-shakespeare-700 hover:text-shakespeare-200">About</Link
+      ></FooterLink
     >
   </FooterLinkGroup>
   <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
