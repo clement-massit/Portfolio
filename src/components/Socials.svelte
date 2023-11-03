@@ -94,7 +94,7 @@
         </div>
         <div class="img row-start-2">
           <a
-            href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
+            href="https://www.instagram.com/clem_massit/"
             class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 my-1"
           >
             <SocialIcons
