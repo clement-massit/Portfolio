@@ -1,6 +1,10 @@
 <script>
   import { Card, CardPlaceholder } from "flowbite-svelte";
   import { onMount } from "svelte";
+  import Projects from "../components/Projects.svelte";
+  import cardio_disease from "../static/CardioDisease.jpg";
+  import mass_shooting from "../static/USmass_shooting.png";
+
   // import FusionCharts from "fusioncharts";
   // import Charts from "fusioncharts/fusioncharts.charts";
   // import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
@@ -90,7 +94,33 @@
 </div> -->
 
 <!-- SPINNER ORBITS -->
-<div>
+<div class="mt-20">
+  <Projects
+    title="Cardiovascular Disease Notebook"
+    content="This notebook presents a logistic regression on cardiovascular disease dataset"
+    img={cardio_disease}
+    link="https://github.com/clement-massit/Cardiovascular_disease"
+    target="_blank"
+  />
+  <Projects
+    title="Mass Shooting Visualization (D3.js)"
+    content="The objective of our project is to visualize and analyze some datas concerning mass shootings in the USA.
+The dashboard helps to understand some data concerning mass shootings"
+    img={mass_shooting}
+    link="https://github.com/clement-massit/Data732_Mass_Shooting"
+    target="_blank"
+  />
+  <Projects
+    title="Bard API Test"
+    content="The objective of our project is to visualize and analyze some datas concerning mass shootings in the USA.
+The dashboard helps to understand some data concerning mass shootings"
+    img={mass_shooting}
+    link="/Bard"
+    target="_self"
+  />
+</div>
+
+<!-- <div>
   <div class="spinner-box">
     <div class="blue-orbit leo" />
 
@@ -103,7 +133,7 @@
     <div class="white-orbit w3 leo" />
   </div>
   <div><h1>Coming soon ...</h1></div>
-</div>
+</div> -->
 
 <!-- GRADIENT CIRCLE PLANES -->
 <!-- <div class="spinner-box">

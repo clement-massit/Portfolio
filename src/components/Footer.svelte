@@ -10,7 +10,7 @@
   import { Link } from "svelte-routing";
 </script>
 
-<Footer class="bg-shakespeare-50">
+<Footer class="bg-shakespeare-50 w-50 -bottom-full left-0 z-0">
   <FooterCopyright
     aClass="text-shakespeare-border hover:text-shakespeare-200"
     href="/"
@@ -41,19 +41,23 @@
     >
   </FooterLinkGroup>
   <div class="flex mt-4 space-x-6 sm:justify-center sm:mt-0">
-    <FooterIcon href="https://www.linkedin.com/in/cl%C3%A9ment-massit/">
+    <FooterIcon
+      href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
+      target="_blank"
+    >
       <LinkedinSolid
         class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-shakespeare-border dark:hover:text-white"
       />
     </FooterIcon>
-    <FooterIcon href="https://github.com/clement-massit">
+    <FooterIcon href="https://github.com/clement-massit" target="_blank">
       <GithubSolid
         class="w-4 h-4 text-gray-500 dark:text-gray-500 hover:text-shakespeare-border dark:hover:text-white"
       />
     </FooterIcon>
     <FooterIcon href="https://www.instagram.com/clem_massit/">
       <a
-        href="#"
+        target="_blank"
+        href="https://www.instagram.com/clem_massit/"
         class="text-gray-500 dark:text-gray-500 hover:text-shakespeare-border dark:hover:text-white"
       >
         <svg

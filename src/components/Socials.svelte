@@ -67,6 +67,7 @@
           <a
             href="https://github.com/clement-massit"
             class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4"
+            target="_blank"
           >
             <SocialIcons
               network="github"
@@ -82,6 +83,7 @@
           <a
             href="https://www.linkedin.com/in/cl%C3%A9ment-massit/"
             class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 my-1"
+            target="_blank"
           >
             <SocialIcons
               network="linkedin"
@@ -96,6 +98,7 @@
           <a
             href="https://www.instagram.com/clem_massit/"
             class="justify-center space-y-4 sm:flex sm:space-y-0 sm:space-x-4 my-1"
+            target="_blank"
           >
             <SocialIcons
               network="instagram"
