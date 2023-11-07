@@ -4,65 +4,10 @@
   import Projects from "../components/Projects.svelte";
   import cardio_disease from "../static/CardioDisease.jpg";
   import mass_shooting from "../static/USmass_shooting.png";
+  import spanish_redwine from "../static/spanish_redwine.jpg";
+  import alarms_labs from "../static/Alarms_labsjpg.jpg";
 
-  // import FusionCharts from "fusioncharts";
-  // import Charts from "fusioncharts/fusioncharts.charts";
-  // import FusionTheme from "fusioncharts/themes/fusioncharts.theme.fusion";
-  // import SvelteFC, { fcRoot } from "svelte-fusioncharts";
-
-  let beer_data = [];
-  let abv = [];
-  let dict = {};
-  let global = [];
-  function comparer(a, b) {
-    return a.id - b.id;
-  }
-  const fetchdata = (async () => {
-    const response = await fetch(
-      "https://raw.githubusercontent.com/clement-massit/serverless-functions/main/netlify/functions/data.json"
-    );
-    let data = await response.json();
-    var arr = Object.values(data);
-    for (var i in arr) {
-      abv.push(arr[i]["abv"]);
-    }
-
-    for (const valeur of abv) {
-      if (dict[valeur] === undefined) {
-        dict[valeur] = 1;
-        global.push({ id: valeur, value: 1 });
-      } else {
-        dict[valeur]++;
-        global.push({ id: valeur, value: dict[valeur] });
-      }
-    }
-
-    console.log(global);
-    return abv;
-  })();
-
-  // Always set FusionCharts as the first parameter
-  // fcRoot(FusionCharts, Charts, FusionTheme);
-
-  // const dataSource = {
-  //   chart: {
-  //     caption: "Countries With Most Oil Reserves [2017-18]",
-  //     subCaption: "In MMbbl = One Million barrels",
-  //     xAxisName: "Country",
-  //     yAxisName: "Reserves (MMbbl)",
-  //     numberSuffix: "K",
-  //     theme: "fusion",
-  //   },
-  //   data: dict,
-  // };
-
-  // const chartConfigs = {
-  //   type: "column2d",
-  //   width: 600,
-  //   height: 400,
-  //   dataFormat: "json",
-  //   dataSource: dataSource,
-  // };
+  //
 
   let data_for_chart = [];
 </script>
@@ -111,12 +56,18 @@ The dashboard helps to understand some data concerning mass shootings"
     target="_blank"
   />
   <Projects
-    title="Bard API Test"
-    content="The objective of our project is to visualize and analyze some datas concerning mass shootings in the USA.
-The dashboard helps to understand some data concerning mass shootings"
-    img={mass_shooting}
-    link="/Bard"
+    title="Spanish Red Wine Information (Data visualization)"
+    content="This dataset is related to red variants of spanish wines. The dataset describes several popularity and description metrics their effect on it's quality"
+    img={spanish_redwine}
+    link="/Wine"
     target="_self"
+  />
+  <Projects
+    title="Alarms management (Java)"
+    content="This project is an example of using event model in case of some alarms in lab. There are 3 types of events : Gaz, Radiation, Fire. It uses an easy to use graphic interface"
+    img={alarms_labs}
+    link="https://github.com/clement-massit/INFO641-Alarmes"
+    target="_blank"
   />
 </div>
 

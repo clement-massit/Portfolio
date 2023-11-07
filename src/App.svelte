@@ -6,7 +6,7 @@
   import Footer from "./components/Footer.svelte";
   import About from "./routes/About.svelte";
   import Background from "./components/Background.svelte";
-  import BardTest from "./routes/Bard_Test.svelte";
+  import Wine from "./components/Wine.svelte";
 
   export let url = "";
 </script>
@@ -18,7 +18,7 @@
     </nav>
     <Route path="/Dashboard" component={Dashboard} />
     <Route path="/About" component={About} />
-    <Route path="/Bard" component={BardTest} />
+    <Route path="/Wine" component={Wine} />
     <Route path="/" component={Home} />
     <Footer />
   </Router>
