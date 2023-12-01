@@ -6,6 +6,7 @@
   import mass_shooting from "../static/USmass_shooting.png";
   import spanish_redwine from "../static/spanish_redwine.jpg";
   import alarms_labs from "../static/Alarms_labsjpg.jpg";
+  import pinball from "../static/pinball.jpg";
 
   //
 
@@ -48,11 +49,10 @@
     target="_blank"
   />
   <Projects
-    title="Mass Shooting Visualization (D3.js)"
-    content="The objective of our project is to visualize and analyze some datas concerning mass shootings in the USA.
-The dashboard helps to understand some data concerning mass shootings"
-    img={mass_shooting}
-    link="https://github.com/clement-massit/Data732_Mass_Shooting"
+    title="Pinball game made with Matter JS"
+    content="Demo of a small pinball game made with a 2D physics engine for Javascript"
+    img={pinball}
+    link="https://main--deluxe-marshmallow-2a5d89.netlify.app/"
     target="_blank"
   />
   <Projects
@@ -61,6 +61,15 @@ The dashboard helps to understand some data concerning mass shootings"
     img={spanish_redwine}
     link="/Wine"
     target="_self"
+  />
+
+  <Projects
+    title="Mass Shooting Visualization (D3.js)"
+    content="The objective of our project is to visualize and analyze some datas concerning mass shootings in the USA.
+The dashboard helps to understand some data concerning mass shootings"
+    img={mass_shooting}
+    link="https://github.com/clement-massit/Data732_Mass_Shooting"
+    target="_blank"
   />
   <Projects
     title="Alarms management (Java)"

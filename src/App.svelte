@@ -16,7 +16,7 @@
     <nav>
       <AppBar />
     </nav>
-    <Route path="/Dashboard" component={Dashboard} />
+    <Route path="/Projects" component={Dashboard} />
     <Route path="/About" component={About} />
     <Route path="/Wine" component={Wine} />
     <Route path="/" component={Home} />

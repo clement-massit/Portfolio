@@ -25,10 +25,10 @@
         >Clément</Link
       ></NavLi
     >
-    <NavLi href="/Dashboard"
+    <NavLi href="/Projects"
       ><Link
-        to="/Dashboard"
-        class=" text-shakespeare-700 hover:text-shakespeare-200">Dashboard</Link
+        to="/Projects"
+        class=" text-shakespeare-700 hover:text-shakespeare-200">Projects</Link
       ></NavLi
     >
     <NavLi href="/About"

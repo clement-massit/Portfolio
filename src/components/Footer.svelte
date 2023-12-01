@@ -25,10 +25,10 @@
     >
     <FooterLink
       aClass="text-shakespeare-700 hover:text-shakespeare-200"
-      href="/Dashboard"
+      href="/Projects"
       ><Link
-        to="/Dashboard"
-        class=" text-shakespeare-700 hover:text-shakespeare-200">Dashboard</Link
+        to="/Projects"
+        class=" text-shakespeare-700 hover:text-shakespeare-200">Projects</Link
       ></FooterLink
     >
     <FooterLink
