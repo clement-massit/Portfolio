@@ -2,11 +2,12 @@
   import { Card, CardPlaceholder } from "flowbite-svelte";
   import { onMount } from "svelte";
   import Projects from "../components/Projects.svelte";
-  import cardio_disease from "../static/CardioDisease.jpg";
+  import cardio_disease from "../static/heart.jpg";
   import mass_shooting from "../static/USmass_shooting.png";
   import spanish_redwine from "../static/spanish_redwine.jpg";
   import alarms_labs from "../static/Alarms_labsjpg.jpg";
   import pinball from "../static/pinball.jpg";
+  import ue from "../static/unrealengine.jpg";
 
   //
 
@@ -41,6 +42,13 @@
 
 <!-- SPINNER ORBITS -->
 <div class="mt-20">
+  <Projects
+    title="Unreal Engine 5.3.2 Cinematics coming soon ..."
+    content="This is a special page related to all my creation made with Unreal Engine 5"
+    img={ue}
+    link=""
+    target=""
+  />
   <Projects
     title="Cardiovascular Disease Notebook"
     content="This notebook presents a logistic regression on cardiovascular disease dataset"

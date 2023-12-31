@@ -91,4 +91,8 @@ export const stack = [
     alt: "LateX",
     src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
   },
+  {
+    alt: "Unreal Engine 5",
+    src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/unrealengine/unrealengine-original-wordmark.svg",
+  },
 ];

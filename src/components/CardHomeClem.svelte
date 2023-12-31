@@ -9,15 +9,16 @@
   import Socials from "./Socials.svelte";
   const data = {
     Name: "Clément Massit",
-    titleDescription: " I'm Clément Massit - Data Scientist",
+    titleDescription: " I'm Clément Massit - Data Engineer",
     Description:
-      " Young engineer graduated from POLYTECH ANNECY Engineering school. I have a degree in computer science & data science",
+      " Young engineer graduated from POLYTECH ANNECY Engineering school. I have a degree in computer science & data engineering",
   };
   let matches;
 </script>
 
 <MediaQuery query="(max-width: 480px)" bind:matches>
   {#if matches}
+    <!-- TELEPHONE -->
     <Card
       class="text-center align-middle bg-shakespeare-950 border-none "
       size="sm"
@@ -32,6 +33,7 @@
             {data.Description}
           </span>
         </div>
+
         <div
           class="div2 row-span-2 row-start-3 bg-shakespeare-900 rounded-xl py-1 px-1"
         >
@@ -60,6 +62,7 @@
   {/if}
 
   {#if !matches}
+    <!-- Ordinateur -->
     <Card
       class="container bg-shakespeare-950 border-none mt-28 shadow-xl mb-14"
       size="xl"
