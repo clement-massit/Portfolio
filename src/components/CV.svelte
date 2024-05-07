@@ -39,7 +39,9 @@
     </div>
 
     <p class="text-sm text-gray-500 dark:text-gray-400">
-      Junior Data Scientist, Data Analyst or Data Engineer
+      Junior Data Scientist at the University of Bordeaux - BPH
+      <br />
+      Fixed-term contract, Feb 2024 - Jan 2025
     </p>
   </TabItem>
   <TabItem>
@@ -105,7 +107,30 @@
       <BriefcaseSolid size="sm" />
       Experiences
     </div>
-    <Timeline class="overflow-y-auto h-52">
+    <Timeline class="overflow-y-auto h-60 divide-y divide-blue-200">
+      <TimelineItem
+        title="University of Bordeaux - BPH Bordeaux Population Health - AHEAD"
+        date="Feb 2024 - Jan 2025"
+      >
+        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+          Data Scientist
+          <br />
+          Adapt and implement Transformer-type (LLM) algorithms for the automatic
+          classification of very large databases derived from emergency call reports
+          to the SAMU center 15.
+          <br />
+          Participate in the analysis of data related to emergency rescue interventions
+          over the past 15 years regarding the impact of medication consumption on
+          the risk of trauma
+          <br />
+        </p>
+
+        <List>
+          <ListgroupItem>Machine & Deep learning</ListgroupItem>
+          <ListgroupItem>Database implementation</ListgroupItem>
+          <ListgroupItem>App development</ListgroupItem>
+        </List>
+      </TimelineItem>
       <TimelineItem
         title="ALPhANOV - Internship in artificial intelligence & cloud computing"
         date="Mar 2023 - Aug 2023"
@@ -116,12 +141,12 @@
           Analysis and classification of alcohol spectra by a connected device in
           real time
           <br />
-          <List>
-            <ListgroupItem>Machine & Deep learning</ListgroupItem>
-            <ListgroupItem>Cloud environment (AWS)</ListgroupItem>
-            <ListgroupItem>Web development</ListgroupItem>
-          </List>
         </p>
+        <List>
+          <ListgroupItem>Machine & Deep learning</ListgroupItem>
+          <ListgroupItem>Cloud environment (AWS)</ListgroupItem>
+          <ListgroupItem>Web development</ListgroupItem>
+        </List>
       </TimelineItem>
       <TimelineItem
         title="LISTIC LABORATORY - Internship as a laboratory engineer"
@@ -133,11 +158,11 @@
           Soil classification using satellite images (TimeSeries) & study of attention
           mechanism
           <br />
-          <List>
-            <ListgroupItem>Deep learning</ListgroupItem>
-            <ListgroupItem>Development</ListgroupItem>
-          </List>
         </p>
+        <List>
+          <ListgroupItem>Deep learning</ListgroupItem>
+          <ListgroupItem>Development</ListgroupItem>
+        </List>
       </TimelineItem>
     </Timeline>
   </TabItem>

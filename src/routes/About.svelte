@@ -20,7 +20,10 @@
       </p>
 
       <br />
-      <p>I am currently based near Bordeaux seeking for a job in this field.</p>
+      <p>
+        I am currently at the University of Bordeaux working in Bordeaux
+        Population Health as data scientist.
+      </p>
     </div>
   </div>
 
