@@ -46,8 +46,8 @@
     title="Unreal Engine 5.3.2 Cinematics coming soon ..."
     content="This is a special page related to all my creation made with Unreal Engine 5"
     img={ue}
-    link=""
-    target=""
+    link="/unreal"
+    target="_self"
   />
   <Projects
     title="Cardiovascular Disease Notebook"

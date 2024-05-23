@@ -7,7 +7,7 @@
   import About from "./routes/About.svelte";
   import Background from "./components/Background.svelte";
   import Wine from "./components/Wine.svelte";
-
+  import Unreal from "./components/Unreal.svelte";
   export let url = "";
 </script>
 
@@ -19,6 +19,8 @@
     <Route path="/Projects" component={Dashboard} />
     <Route path="/About" component={About} />
     <Route path="/Wine" component={Wine} />
+    <Route path="/unreal" component={Unreal} />
+
     <Route path="/" component={Home} />
     <Footer />
   </Router>
