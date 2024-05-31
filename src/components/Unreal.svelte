@@ -1,4 +1,5 @@
 <script>
+  import { ArrowLeftSolid } from "flowbite-svelte-icons";
   import { Splide, SplideSlide } from "@splidejs/svelte-splide";
   import "@splidejs/splide/dist/css/themes/splide-default.min.css";
   import { Video } from "flowbite-svelte";
@@ -11,7 +12,22 @@
   ];
 </script>
 
-<div class="carousel">
+{#each sources_videos as item, index}
+  <div class="my-32">
+    <video
+      class="relative w-full h-full object-cover"
+      muted
+      autoplay
+      loop
+      playsinline
+      disablepictureinpicture
+    >
+      <source src={item} type="video/mp4" />
+    </video>
+  </div>
+{/each}
+
+<!-- <div class="carousel">
   <Splide
     options={{
       width: "80%",
@@ -24,6 +40,8 @@
       gap: 400,
     }}
   >
+    
+ 
     {#each sources_videos as item, index}
       <SplideSlide>
         <div class="carousel">
@@ -33,18 +51,18 @@
         </div>
       </SplideSlide>
     {/each}
-  </Splide>
-</div>
-<h2 class=" text-center text-shakespeare-900 font-bold">
+  </Splide> 
+</div> -->
+<!-- <h2 class=" text-center text-shakespeare-900 font-bold">
   All those videos are made with Unreal Engine
 </h2>
-<h2 class="mb-20 text-shakespeare-900">It uses Quixel components</h2>
+<h2 class="mb-20 text-shakespeare-900">It uses Quixel components</h2> -->
 
 <style>
-  .carousel {
+  /* .carousel {
     margin-top: 2vh;
     display: flex;
     justify-content: center;
     align-items: center;
-  }
+  } */
 </style>

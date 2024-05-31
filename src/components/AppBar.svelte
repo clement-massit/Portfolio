@@ -10,7 +10,7 @@
 </script>
 
 <Navbar
-  class="px-2 sm:px-4 py-2.5 fixed w-full z-20 top-0 left-0 border-b bg-shakespeare-50 shadow-xl"
+  class="px-2 sm:px-4 p-2.5 fixed w-full z-20 top-0 left-0 border-b bg-shakespeare-50 shadow-xl"
 >
   <NavBrand href="/">
     <span

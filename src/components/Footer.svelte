@@ -10,7 +10,9 @@
   import { Link } from "svelte-routing";
 </script>
 
-<Footer class="bg-shakespeare-50 w-50 -bottom-full left-0 z-0">
+<Footer
+  class="px-2 sm:px-4 p-2.5 relative w-full z-20 bottom-0 left-0 border-b bg-shakespeare-50 shadow-xl"
+>
   <FooterCopyright
     aClass="text-shakespeare-border hover:text-shakespeare-200"
     href="/"
