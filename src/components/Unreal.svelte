@@ -4,9 +4,9 @@
   import "@splidejs/splide/dist/css/themes/splide-default.min.css";
   import { Video } from "flowbite-svelte";
   const sources_videos = [
-    "src/static/videos/Ice_nuka.mp4",
-    "src/static/videos/Nature.mp4",
-    "src/static/videos/ArchHouse.mp4",
+    "src/static/videos/Ice_nuka.webm",
+    "src/static/videos/Nature.webm",
+    "src/static/videos/ArchHouse.webm",
     "src/static/videos/Ship.mp4",
     "src/static/videos/Tavern.mp4",
   ];
