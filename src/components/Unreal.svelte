@@ -7,8 +7,8 @@
     "src/static/videos/Ice_nuka.webm",
     "src/static/videos/Nature.webm",
     "src/static/videos/ArchHouse.webm",
-    "src/static/videos/Ship.mp4",
-    "src/static/videos/Tavern.mp4",
+    // "src/static/videos/Ship.mp4",
+    // "src/static/videos/Tavern.mp4",
   ];
 </script>
 
@@ -22,7 +22,7 @@
       playsinline
       disablepictureinpicture
     >
-      <source src={item} type="video/mp4" />
+      <source src={item} type="video/webm" />
     </video>
   </div>
 {/each}
