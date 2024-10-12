@@ -4,10 +4,10 @@
   import "@splidejs/splide/dist/css/themes/splide-default.min.css";
 
   const source = [
-    "src/static/videos/Ice_nuka.webm",
-    "src/static/videos/Nature.webm",
-    "src/static/videos/ArchHouse.webm",
-    "src/static/videos/Tavern.webm",
+    "src/static/Ice_nuka.webm",
+    "src/static/Nature.webm",
+    "src/static/ArchHouse.webm",
+    "src/static/Tavern.webm",
     // "src/static/videos/Ship.mp4",
     // "src/static/videos/Tavern.mp4",
   ];
