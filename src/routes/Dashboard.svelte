@@ -8,6 +8,7 @@
   import alarms_labs from "../static/Alarms_labsjpg.jpg";
   import pinball from "../static/pinball.jpg";
   import ue from "../static/unrealengine.jpg";
+  import listecourse from "../static/liste-course.png";
 
   //
 
@@ -48,6 +49,13 @@
     img={ue}
     link="/unreal"
     target="_self"
+  />
+  <Projects
+    title="Custom Jow app"
+    content="A small application that uses the jow api for recipes and ingredients"
+    img={listecourse}
+    link="https://liste-course-jow.netlify.app/"
+    target="_blank"
   />
   <Projects
     title="Cardiovascular Disease Notebook"

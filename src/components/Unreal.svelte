@@ -2,8 +2,8 @@
   import { ArrowLeftSolid } from "flowbite-svelte-icons";
   import { Splide, SplideSlide } from "@splidejs/svelte-splide";
   import "@splidejs/splide/dist/css/themes/splide-default.min.css";
-  import { Video } from "flowbite-svelte";
-  const sources_videos = [
+
+  const source = [
     "src/static/videos/Ice_nuka.webm",
     "src/static/videos/Nature.webm",
     "src/static/videos/ArchHouse.webm",
@@ -12,7 +12,7 @@
   ];
 </script>
 
-{#each sources_videos as item, index}
+{#each source as item, index}
   <div class="my-32">
     <video
       class="relative w-full h-full object-cover"
