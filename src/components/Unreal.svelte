@@ -7,6 +7,7 @@
     "src/static/videos/Ice_nuka.webm",
     "src/static/videos/Nature.webm",
     "src/static/videos/ArchHouse.webm",
+    "src/static/videos/Tavern.webm",
     // "src/static/videos/Ship.mp4",
     // "src/static/videos/Tavern.mp4",
   ];
