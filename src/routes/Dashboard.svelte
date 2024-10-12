@@ -44,7 +44,7 @@
 <!-- SPINNER ORBITS -->
 <div class="mt-20">
   <Projects
-    title="Unreal Engine 5.3.2 Cinematics coming soon ..."
+    title="Unreal Engine 5.3.2 Cinematics"
     content="This is a special page related to all my creation made with Unreal Engine 5"
     img={ue}
     link="/unreal"
