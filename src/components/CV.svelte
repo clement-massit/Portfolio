@@ -41,7 +41,7 @@
     <p class="text-sm text-gray-500 dark:text-gray-400">
       Junior Data Scientist at the University of Bordeaux - BPH
       <br />
-      Fixed-term contract, Feb 2024 - Jan 2025
+      Fixed-term contract, Feb 2024 - Feb 2025
     </p>
   </TabItem>
   <TabItem>
@@ -52,7 +52,7 @@
       <OpenBookSolid size="sm" />
       Education
     </div>
-    <Timeline class="overflow-y-auto h-52">
+    <Timeline class="overflow-y-auto h-96">
       <TimelineItem
         title="Tallinn University of Technology - TALTECH"
         date="Sept 2022 - Jan 2023"
@@ -68,6 +68,9 @@
             >
           </List>
         </p>
+
+        
+        
         <!-- <Button color="alternative">
           Learn more
           <ArrowRightOutline class="ml-2 w-3 h-3" />
@@ -107,25 +110,38 @@
       <BriefcaseSolid size="sm" />
       Experiences
     </div>
-    <Timeline class="overflow-y-auto h-60 divide-y divide-blue-200">
+    <Timeline class="overflow-y-auto h-96 divide-y divide-blue-200">
       <TimelineItem
         title="University of Bordeaux - BPH Bordeaux Population Health - AHEAD"
         date="Feb 2024 - Jan 2025"
       >
-        <p class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
+        <span class="mb-4 text-base font-normal text-gray-500 dark:text-gray-400">
           Data Scientist
           <br />
-          Adapt and implement Transformer-type (LLM) algorithms for the automatic
+          <strong>Application Development</strong><br>
+          &nbsp; Implementation of an application integrating data processing algorithms and embedding classification <br>
+          &nbsp; Backend & Frontend Development (FastAPI, Vue.js) <br>
+          &nbsp; Application deployment and containerization (Docker) <br>
+          &nbsp; Data flow management, queuing systems, and task scheduling <br><br>
+
+          <strong>Data Processing Algorithms</strong><br>
+          &nbsp; Utilization of large language models (LLMs) for computing text embeddings (GPT, BERT, Mistral, etc.) <br>
+          &nbsp; Development of classification algorithms (Machine Learning) <br><br>
+
+           <strong>Database Implementation</strong><br>
+           &nbsp; Design and deployment of a relational database architecture using PostgreSQL. <br>
+          
+          <br />
+        </span>
+        <!-- Adapt and implement Transformer-type (LLM) algorithms for the automatic
           classification of very large databases derived from emergency call reports
           to the SAMU center 15.
-          <br />
-          Participate in the analysis of data related to emergency rescue interventions
+Participate in the analysis of data related to emergency rescue interventions
           over the past 15 years regarding the impact of medication consumption on
-          the risk of trauma
-          <br />
-        </p>
-
+          the risk of trauma -->
         <List>
+          Python, Javascript, FastAPI, VueJS, PostgreSQL, RabbitMQ, LLM, Docker,
+Grafana, Git
           <ListgroupItem>Machine & Deep learning</ListgroupItem>
           <ListgroupItem>Database implementation</ListgroupItem>
           <ListgroupItem>App development</ListgroupItem>

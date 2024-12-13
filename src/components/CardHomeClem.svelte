@@ -63,8 +63,9 @@
 
   {#if !matches}
     <!-- Ordinateur -->
+     <div class="card">
     <Card
-      class="container bg-shakespeare-950 border-none mt-28 shadow-xl mb-14"
+      class="container bg-shakespeare-950 border-none mt-28 shadow-xl mb-3"
       size="xl"
       padding="md"
     >
@@ -136,10 +137,16 @@
         <Img src={img_clem} alt="Clément Massit" imgClass="rounded-xl" />
       </div> -->
     </Card>
+    </div>
   {/if}
 </MediaQuery>
 
 <style>
+
+  .card{
+    display: flex;
+    justify-content: center;
+  }
   .parent {
     display: grid;
     text-align: center;

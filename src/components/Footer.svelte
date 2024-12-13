@@ -1,4 +1,4 @@
-<script>
+<!-- <script>
   import {
     Footer,
     FooterCopyright,
@@ -11,7 +11,7 @@
 </script>
 
 <Footer
-  class="px-2 sm:px-4 p-2.5 relative w-full z-20 bottom-0 left-0 border-b bg-shakespeare-50 shadow-xl"
+  class="px-2 sm:px-4 py-2.5 w-full bg-shakespeare-50 shadow-xl border-t"
 >
   <FooterCopyright
     aClass="text-shakespeare-border hover:text-shakespeare-200"
@@ -77,4 +77,96 @@
       </a>
     </FooterIcon>
   </div>
-</Footer>
+</Footer> -->
+
+
+
+<script>
+  // Vous pouvez ajouter des données dynamiques ici, si nécessaire
+  const currentYear = new Date().getFullYear();
+</script>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <a href="/">
+          <img src="/images/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="footer-links">
+        <a href="/about">À propos</a>
+        <a href="/contact">Contact</a>
+        <a href="/privacy">Politique de confidentialité</a>
+        <a href="/terms">Conditions d'utilisation</a>
+      </div>
+      <div class="footer-social">
+        <a href="https://facebook.com" target="_blank" aria-label="Facebook">
+          <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://twitter.com" target="_blank" aria-label="Twitter">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a href="https://instagram.com" target="_blank" aria-label="Instagram">
+          <i class="fab fa-instagram"></i>
+        </a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; {currentYear} Votre Nom ou Entreprise. Tous droits réservés.</p>
+    </div>
+  </div>
+</footer>
+
+<style>
+  .footer {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    padding: 20px 0;
+    font-size: 14px;
+    margin-top: 100px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .footer-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .footer-logo img {
+    max-height: 50px;
+  }
+  .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    margin: 0 10px;
+    transition: color 0.3s;
+  }
+  .footer-links a:hover {
+    color: #3498db;
+  }
+  .footer-social a {
+    color: #ecf0f1;
+    margin: 0 10px;
+    font-size: 18px;
+    transition: color 0.3s;
+  }
+  .footer-social a:hover {
+    color: #3498db;
+  }
+  .footer-bottom {
+    text-align: center;
+    border-top: 1px solid #34495e;
+    padding-top: 10px;
+    width: 100%;
+  }
+</style>

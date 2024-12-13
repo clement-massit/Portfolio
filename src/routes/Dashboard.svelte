@@ -9,6 +9,7 @@
   import pinball from "../static/pinball.jpg";
   import ue from "../static/unrealengine.jpg";
   import listecourse from "../static/liste-course.png";
+  import aheadapp from "../static/aheadapp.jpeg"
 
   //
 
@@ -49,6 +50,13 @@
     img={ue}
     link="/unreal"
     target="_self"
+  />
+  <Projects
+    title="Ahead App"
+    content="Team app for planning, Secret Santa and lunch organisation"
+    img={aheadapp}
+    link="https://bph-ahead.netlify.app"
+    target="_blank"
   />
   <Projects
     title="Custom Jow app"
