@@ -6,8 +6,9 @@
   import { Card } from "flowbite-svelte";
   import CardsArrangement from "../components/CardsArrangement.svelte";
   import Carousel from "../components/Carousel.svelte";
-
+  import ModelViewer from "../components/ModelViewer.svelte";
   let matches;
 </script>
 
+<!-- <ModelViewer></ModelViewer> -->
 <CardHomeClem />

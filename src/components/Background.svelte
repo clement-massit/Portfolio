@@ -39,14 +39,15 @@
   };
 </script>
 
-<Particles
+<!-- <Particles
   id="tsparticles"
   class="foo bar"
   style=""
   options={particlesConfig}
   on:particlesLoaded={onParticlesLoaded}
   {particlesInit}
-/>
+/> -->
+<div id="tsparticles"></div>
 
 <!-- or -->
 

@@ -6,8 +6,11 @@
     NavUl,
     NavHamburger,
   } from "flowbite-svelte";
+  import MediaQuery from "svelte-media-queries";
+
   import { Router, Link, Route } from "svelte-routing";
   import logo from "../static/logo.png";
+  let matches;
 </script>
 
 <Navbar
